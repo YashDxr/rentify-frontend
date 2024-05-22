@@ -31,7 +31,7 @@ export default function Listing() {
         setError(false);
         setLoading(true);
         const listingId = params.listingId;
-        const res = await fetch(`/api/listing/get/${listingId}`);
+        const res = await fetch(`https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/listing/get/${listingId}`);
         const data = await res.json();
         if (data.success === false) {
           setError(true);

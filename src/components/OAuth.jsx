@@ -16,7 +16,7 @@ export default function OAuth() {
 
         // console.log(result);
 
-        const res = await fetch('/api/auth/google', {
+        const res = await fetch('https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/auth/google', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json',

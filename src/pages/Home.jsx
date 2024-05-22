@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await fetch("/api/listing/get?offer=true&limit=3");
+        const res = await fetch("https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/listing/get?offer=true&limit=3");
         const data = await res.json();
         setOfferListings(data);
         fetchRentListings();
@@ -27,7 +27,7 @@ export default function Home() {
     };
     const fetchRentListings = async () => {
       try {
-        const res = await fetch("/api/listing/get?type=rent&limit=3");
+        const res = await fetch("https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/listing/get?type=rent&limit=3");
         const data = await res.json();
         setRentListings(data);
         fetchSaleListings();
@@ -37,7 +37,7 @@ export default function Home() {
     };
     const fetchSaleListings = async () => {
       try {
-        const res = await fetch("/api/listing/get?type=sale&limit=3");
+        const res = await fetch("https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/listing/get?type=sale&limit=3");
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {

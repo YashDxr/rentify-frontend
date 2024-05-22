@@ -127,7 +127,7 @@ export default function CreateListing() {
       setLoading(true);
       setError(false);
 
-      const res = await fetch("/api/listing/create", {
+      const res = await fetch("https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/listing/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -8,7 +8,7 @@ export default function Contact(props) {
   useEffect(() => {
     const fetchOwner = async () => {
       try {
-        const res = await fetch(`/api/user/${props.listing.userRef}`);
+        const res = await fetch(`https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/user/${props.listing.userRef}`);
         const data = await res.json();
 
         setOwner(data);

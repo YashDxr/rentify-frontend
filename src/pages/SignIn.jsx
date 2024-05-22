@@ -37,7 +37,7 @@ export default function SignIn() {
     try {
       // setLoading(true);
       dispatch(signInStart());
-      const res = await fetch("/api/auth/signin", {
+      const res = await fetch("https://rentify-backend-7zr8kctt9-yashs-projects-0cbfb7bb.vercel.app/api/auth/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
